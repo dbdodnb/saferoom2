@@ -38,6 +38,11 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 50px;
+}
+
 * {
   outline: none;
 }
@@ -54,6 +59,10 @@ table {
   font-family: medium;
   src: url(../fonts/Montserrat-Medium.ttf);
 }
+@font-face {
+  font-family: bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
 .wrapper {
   padding: 0 100px;
 }
@@ -61,12 +70,21 @@ table {
 .text {
   font-family: regular;
   font-size: 20px;
+  color: #3F2207;
+}
+.text_accent {
+  font-family: bold;
+  color: #CC855D;
+}
+.text_margin-top {
+  margin-top: 50px;
 }
 
 .headline {
   font-family: medium;
-  font-size: 22px;
+  font-size: 32px;
   color: #63A4DA;
+  font-weight: 700;
 }
 
 .box {
@@ -131,6 +149,7 @@ table {
   font-family: regular;
   font-weight: 600;
   text-align: center;
+  line-height: 32px;
 }
 .box .header__content .header__buttons {
   width: 50%;
@@ -188,5 +207,16 @@ table {
   width: 110px;
 }
 .box .qualities__content div .headline {
+  font-size: 22px;
   text-align: center;
+  font-weight: 500;
+}
+.box .about {
+  width: 100%;
+  min-height: 400px;
+  line-height: 30px;
+}
+.box .about__info {
+  height: 100%;
+  width: 60%;
 }/*# sourceMappingURL=main.css.map */

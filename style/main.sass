@@ -32,9 +32,14 @@ table
   border-collapse: collapse
   border-spacing: 0
     
+html
+    scroll-behavior: smooth
+    scroll-padding: 50px
+
 $blue: #63A4DA
 $white: #ffffff
 $black: #3F2207
+$beige: #CC855D
 
 *
     outline: none
@@ -51,17 +56,28 @@ $black: #3F2207
     font-family: medium
     src: url(../fonts/Montserrat-Medium.ttf)
 
+@font-face
+    font-family: bold
+    src: url(../fonts/Montserrat-Bold.ttf)
+
 .wrapper
     padding: 0 100px
 
 .text
     font-family: regular
     font-size: 20px
+    color: $black
+    &_accent
+        font-family: bold
+        color: $beige
+    &_margin-top
+        margin-top: 50px
 
 .headline
     font-family: medium
-    font-size: 22px
+    font-size: 32px
     color: $blue
+    font-weight: 700
 
 .box
     display: flex
@@ -117,6 +133,7 @@ $black: #3F2207
                 font-family: regular
                 font-weight: 600
                 text-align: center
+                line-height: 32px
             .header__buttons
                 width: 50%
                 height: 100px
@@ -165,4 +182,14 @@ $black: #3F2207
                 img
                     width: 110px
                 .headline
+                    font-size: 22px
                     text-align: center
+                    font-weight: 500
+    .about
+        width: 100%
+        min-height: 400px
+        line-height: 30px
+        &__info
+            height: 100%
+            width: 60%
+            
