@@ -215,8 +215,13 @@ html {
   width: 100%;
   min-height: 400px;
   line-height: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 .box .about__info {
   height: 100%;
-  width: 60%;
+  width: 58%;
+}
+.box .about__pic {
+  width: 40%;
 }/*# sourceMappingURL=main.css.map */
