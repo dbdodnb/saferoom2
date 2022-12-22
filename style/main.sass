@@ -35,8 +35,23 @@ table
 $blue: #63A4DA
 $white: #ffffff
 
+*
+    outline: none
+
+@font-face 
+    font-family: regular 
+    src: url(../fonts/Montserrat-Regular.ttf)
+
+@font-face
+    font-family: headline
+    src: url(../fonts/Montserrat-Black.ttf)
+
 .wrapper
     padding: 0 100px
+
+.text
+    font-family: regular
+    font-size: 20px
 
 .box
     display: flex
@@ -70,5 +85,25 @@ $white: #ffffff
                 li a
                     text-decoration: none
                     color: $white
-
-            
+                    transition: .2s
+                    &:hover
+                        font-weight: 600  
+                        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3)          
+        .header__content
+            height: calc( 100vh - 100px )
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            justify-content: space-around
+            .header__headline
+                font-size: 96px
+                font-family: headline
+                color: $white
+                text-align: center
+                // transform: translateY(-100px)
+            .header_description
+                color: $white
+                font-size: 22px
+                font-family: regular
+                font-weight: 600
+                text-align: center
