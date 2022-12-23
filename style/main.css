@@ -93,6 +93,15 @@ html {
   font-weight: 600;
 }
 
+.break {
+  width: 80%;
+  margin: 0 auto;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #CC855D;
+  margin-top: 50px;
+}
+
 .box {
   display: flex;
   flex-wrap: wrap;
@@ -290,9 +299,28 @@ html {
 }
 .box .faq {
   width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   margin-top: 50px;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.box .faq img {
+  width: 30%;
+}
+.box .faq__info {
+  width: 65%;
+}
+.box .faq__info .headline {
+  margin-bottom: 50px;
+}
+.box .team {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 50px;
+}
+.box .team .headline {
+  text-align: center;
 }
 
 .flip-card {
@@ -347,5 +375,43 @@ html {
 }
 .flip-card-back .text {
   font-size: 12px;
+  padding: 25px;
+}
+
+.accordion {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.2s;
+  margin-top: 15px;
+  border: 2px solid #D0D0D0;
+}
+.accordion:first-child {
+  margin-top: 0;
+}
+
+.accordion:hover {
+  box-shadow: inset -1px -1px 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  background-color: #D0D0D0;
+  box-shadow: none;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel .text {
   padding: 25px;
 }/*# sourceMappingURL=main.css.map */
