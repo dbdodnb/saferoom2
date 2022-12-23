@@ -93,15 +93,6 @@ html {
   font-weight: 600;
 }
 
-.break {
-  width: 80%;
-  margin: 0 auto;
-  height: 5px;
-  border-radius: 10px;
-  background-color: #CC855D;
-  margin-top: 50px;
-}
-
 .box {
   display: flex;
   flex-wrap: wrap;
@@ -320,13 +311,38 @@ html {
 .box .faq__info .headline {
   margin-bottom: 50px;
 }
-.box .team {
+.box .footer {
   width: 100%;
-  min-height: 300px;
+  min-height: 400px;
+  background-color: #63A4DA;
   margin-top: 50px;
+  padding: 50px 100px;
+  box-sizing: border-box;
 }
-.box .team .headline {
-  text-align: center;
+.box .footer__contacts {
+  width: 50%;
+  height: 100%;
+  line-height: 34px;
+}
+.box .footer__contacts .text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.box .footer__contacts .socials {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: regular;
+}
+.box .footer__partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.box .footer__partners a {
+  display: block;
+  content: "";
 }
 
 .flip-card {
