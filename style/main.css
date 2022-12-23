@@ -318,6 +318,8 @@ html {
   margin-top: 50px;
   padding: 50px 100px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
 }
 .box .footer__contacts {
   width: 50%;
@@ -336,13 +338,28 @@ html {
   font-family: regular;
 }
 .box .footer__partners {
+  width: 45%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .box .footer__partners a {
-  display: block;
+  display: inline-block;
   content: "";
+  width: 35%;
+  height: 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.box .footer__partners a:nth-child(1) {
+  background-image: url(../img/partners/uvs.svg);
+}
+.box .footer__partners a:nth-child(2) {
+  background-image: url(../img/partners/upl.svg);
+}
+.box .footer__partners a:nth-child(3) {
+  background-image: url(../img/partners/unatstvo.svg);
 }
 
 .flip-card {

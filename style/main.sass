@@ -274,6 +274,8 @@ $beige: #CC855D
         margin-top: 50px
         padding: 50px 100px
         box-sizing: border-box
+        display: flex
+        justify-content: space-between
         &__contacts
             width: 50%
             height: 100%
@@ -288,13 +290,24 @@ $beige: #CC855D
                 color: $white
                 font-family: regular
         &__partners
+            width: 45%
+            height: 100%
             display: flex
             flex-wrap: wrap
             justify-content: space-around
             a
-                display: block
+                display: inline-block
                 content: ''
-                
+                width: 35%
+                height: 40%
+                background-size: contain
+                background-repeat: no-repeat
+                &:nth-child(1)
+                    background-image: url(../img/partners/uvs.svg)
+                &:nth-child(2)
+                    background-image: url(../img/partners/upl.svg)
+                &:nth-child(3)
+                    background-image: url(../img/partners/unatstvo.svg)
 
 .flip-card
     background-color: transparent
