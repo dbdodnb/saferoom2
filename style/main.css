@@ -297,6 +297,12 @@ html {
   line-height: 30px;
   text-indent: 50px;
 }
+.box .projects div .projects__content .text_margin-top {
+  margin-top: 25px;
+}
+.box .projects div .projects__content .headline_small {
+  margin-bottom: 25px;
+}
 .box .faq {
   width: 100%;
   min-height: 300px;
